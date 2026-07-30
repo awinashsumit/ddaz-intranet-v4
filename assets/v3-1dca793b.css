@@ -22,10 +22,10 @@
 .v3-topnav{
   display:flex;align-items:center;gap:20px;flex-shrink:0;
   height:64px;padding:0 28px;background:#fff;
-  border-bottom:1px solid var(--hairline);font-family:var(--font);position:relative;z-index:20;
+  border-bottom:1px solid var(--hairline);font-family:var(--font);position:relative;z-index:90;
 }
 .v3-logo{height:38px;object-fit:contain;flex-shrink:0}
-.v3-navrow{display:flex;align-items:center;gap:2px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.v3-navrow{display:flex;align-items:center;gap:2px;flex:1;min-width:0;overflow:visible;scrollbar-width:none}
 .v3-navrow::-webkit-scrollbar{display:none}
 .v3-navlink{
   display:flex;align-items:center;gap:6px;white-space:nowrap;cursor:pointer;
@@ -215,7 +215,7 @@
 @media (max-width:1080px){.v3-toprow{grid-template-columns:1fr}}
 
 /* --- ticker (happening strip) --- */
-.v3-ticker{display:flex;align-items:stretch;height:40px;background:#2DB035;overflow:hidden}
+.v3-ticker{display:flex;align-items:stretch;height:40px;background:#2DB035;overflow:hidden;position:relative;z-index:1}
 .v3-ticker-label{display:flex;align-items:center;flex:0 0 auto;padding:0 18px 0 28px;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink);background:rgba(255,255,255,0.30)}
 .v3-ticker-track{flex:1;display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 72px,#000 calc(100% - 72px),transparent);mask-image:linear-gradient(90deg,transparent,#000 72px,#000 calc(100% - 72px),transparent)}
 .v3-ticker-move{display:flex;align-items:center;white-space:nowrap;animation:v3tick 55s linear infinite;will-change:transform}
@@ -237,7 +237,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-custrow{display:flex;justify-content:flex-end;margin-bottom:14px}
 .v3-custbtn{font-family:var(--font);font-size:13px;font-weight:600;color:var(--g800);background:#fff;border:1px solid rgba(45,176,53,0.35);border-radius:999px;padding:7px 16px;cursor:pointer;transition:background .15s}
 .v3-custbtn:hover{background:var(--g100)}
-.v3-custoverlay{position:fixed;inset:0;background:rgba(15,26,15,0.32);z-index:80;display:flex;justify-content:flex-end}
+.v3-custoverlay{position:fixed;inset:0;background:rgba(15,26,15,0.32);z-index:200;display:flex;justify-content:flex-end}
 .v3-custpanel{width:360px;max-width:90vw;background:#fff;height:100%;padding:22px 24px;overflow-y:auto;display:flex;flex-direction:column;font-family:var(--font);border-radius:16px 0 0 16px;animation:v3slidein .22s ease}
 @keyframes v3slidein{from{transform:translateX(24px);opacity:0}to{transform:none;opacity:1}}
 .v3-custhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
@@ -261,3 +261,47 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-xrow .n{font-size:13.5px;font-weight:600;color:var(--ink)}
 .v3-xrow .d{font-size:12px;color:var(--ink3);margin-top:2px}
 .v3-xrow .m{font-size:12px;color:var(--g800);font-weight:600;white-space:nowrap}
+
+/* --- nav dropdowns --- */
+.v3-navwrap{position:relative}
+.v3-navlink.grp{gap:7px}
+.v3-caret{width:7px;height:7px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.55}
+.v3-navdrop{position:absolute;top:calc(100% + 4px);left:0;min-width:210px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:6px;box-shadow:0 10px 30px rgba(15,26,15,0.10);z-index:60}
+@keyframes v3dropin{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.v3-navdropitem{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border-radius:9px;font-size:13px;color:var(--ink2);cursor:pointer;white-space:nowrap}
+.v3-navdropitem:hover{background:#F7F8F6;color:var(--ink)}
+.v3-navdropitem.active{background:var(--g100);color:var(--g800);font-weight:600}
+/* --- My Favourites --- */
+.v3-favedit{background:none;border:none;font-family:var(--font);font-size:12.5px;font-weight:600;color:var(--g800);cursor:pointer;padding:4px 10px;border-radius:999px}
+.v3-favedit:hover{background:var(--g100)}
+.v3-favgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px 18px 18px}
+.v3-favtile{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px 12px;border:1px solid var(--hairline);border-radius:12px;text-decoration:none;text-align:center;background:#fff;transition:background .15s,transform .15s;position:relative;cursor:pointer}
+.v3-favtile:hover{background:var(--g100);transform:translateY(-1px)}
+.v3-favicon{width:34px;height:34px;border-radius:10px;background:var(--g100);color:var(--g700);display:flex;align-items:center;justify-content:center}
+.v3-favlabel{font-size:11.5px;font-weight:600;color:var(--ink);line-height:1.25}
+.v3-favtile.isedit .v3-favx{position:absolute;top:6px;right:8px;font-size:10px;color:#C62828}
+.v3-favtile.add{border-style:dashed;background:#FBFDFB;color:var(--ink3)}
+.v3-favtile.add .v3-favplus{width:34px;height:34px;border-radius:10px;background:#F1F5F1;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink3)}
+.v3-favtile.add .v3-favlabel{color:var(--ink2)}
+.v3-favtile.add:hover{background:var(--g50)}
+/* --- Delta Wellness info pages (accent-token themed) --- */
+.v3-infopage{--pa:#2DB035;--pa-soft:#E8F7E9}
+.v3-infohero{background:var(--pa-soft);padding:46px 28px 34px;text-align:center;font-family:var(--font)}
+.v3-infocrumb{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--pa);margin-bottom:10px}
+.v3-infohero h1{margin:0 0 8px;font-size:34px;letter-spacing:-0.5px;color:var(--ink)}
+.v3-infohero p{margin:0 auto;max-width:640px;font-size:14.5px;color:var(--ink2);line-height:1.5}
+.v3-infoswitch{display:flex;justify-content:center;gap:8px;margin-top:22px}
+.v3-infopill{padding:7px 16px;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none;color:var(--ink2);border:1px solid rgba(0,0,0,0.10);background:#fff;transition:all .15s}
+.v3-infopill:hover{border-color:var(--pa);color:var(--ink)}
+.v3-infopill.active{background:var(--pa);border-color:var(--pa);color:#fff}
+.v3-infomain{max-width:880px;margin:0 auto;padding:34px 28px 54px;display:flex;flex-direction:column;gap:20px;font-family:var(--font)}
+.v3-infocard{padding:22px 24px}
+.v3-infocard h2{margin:0 0 12px;font-size:16px;color:var(--ink);padding-bottom:10px;border-bottom:2px solid var(--pa-soft)}
+.v3-infolist{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:var(--ink2);line-height:1.55}
+.v3-infolist li::marker{color:var(--pa)}
+.v3-inforow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 4px;text-decoration:none;border-bottom:1px solid var(--g50)}
+.v3-inforow:last-child{border-bottom:none}
+.v3-inforow:hover .n{color:var(--pa)}
+.v3-inforow .n{font-size:13.5px;font-weight:600;color:var(--ink);transition:color .15s}
+.v3-inforow .m{font-size:11.5px;font-weight:600;color:var(--pa);background:var(--pa-soft);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.v3-infonote p{margin:0;font-size:13px;color:var(--ink2);line-height:1.55}
