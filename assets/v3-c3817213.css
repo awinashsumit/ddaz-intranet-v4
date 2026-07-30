@@ -364,3 +364,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-carbtn:hover{background:var(--g100)}
 .v3-carbtn.solid{background:#2DB035;border-color:#2DB035;color:#fff}
 .v3-carbtn.solid:hover{background:#28a230}
+
+.v3-annscroll{scroll-padding-left:18px}
+.v3-annscroll .v3-annbody{padding:14px 18px 16px}
+.v3-toprow{align-items:stretch}
