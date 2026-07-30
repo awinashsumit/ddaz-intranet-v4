@@ -350,3 +350,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-infopage .v3-card{border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(180deg,color-mix(in srgb,var(--pa) 38%,transparent) 0%,color-mix(in srgb,var(--pa) 5%,transparent) 100%) border-box}
 .v3-themecustom{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12.5px;font-weight:600;color:var(--ink);cursor:pointer;font-family:var(--font)}
 .v3-themecustom input{width:36px;height:26px;border:1px solid rgba(0,0,0,0.12);border-radius:6px;padding:1px;background:#fff;cursor:pointer}
+
+.v3-dwlist{display:flex;flex-direction:column;gap:12px;padding:18px}
+.v3-dwrow{display:flex;align-items:center;justify-content:space-between;padding:17px 20px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;font-family:var(--font);transition:transform .15s}
+.v3-dwrow:hover{transform:translateY(-1px)}
