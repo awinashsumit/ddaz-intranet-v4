@@ -275,13 +275,13 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-favedit{background:none;border:none;font-family:var(--font);font-size:12.5px;font-weight:600;color:var(--g800);cursor:pointer;padding:4px 10px;border-radius:999px}
 .v3-favedit:hover{background:var(--g100)}
 .v3-favgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:16px 18px 18px}
-.v3-favtile{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px 12px;border:1px solid var(--hairline);border-radius:12px;text-decoration:none;text-align:center;background:#fff;transition:background .15s,transform .15s;position:relative;cursor:pointer}
+.v3-favtile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px 8px 12px;min-height:88px;border:none;border-radius:12px;text-decoration:none;text-align:center;background:transparent;transition:background .15s;position:relative;cursor:pointer}
 .v3-favtile:hover{background:var(--g100);transform:translateY(-1px)}
 .v3-favicon{width:34px;height:34px;border-radius:10px;background:var(--g100);color:var(--g700);display:flex;align-items:center;justify-content:center}
 .v3-favlabel{font-size:11.5px;font-weight:600;color:var(--ink);line-height:1.25}
 .v3-favtile.isedit .v3-favx{position:absolute;top:6px;right:8px;font-size:10px;color:#C62828}
-.v3-favtile.add{border-style:dashed;background:#FBFDFB;color:var(--ink3)}
-.v3-favtile.add .v3-favplus{width:34px;height:34px;border-radius:10px;background:#F1F5F1;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--ink3)}
+.v3-favtile.add{border:1.5px dashed rgba(0,0,0,0.16);background:transparent;color:var(--ink3)}
+.v3-favtile.add .v3-favplus{font-size:20px;line-height:1;color:var(--ink3)}
 .v3-favtile.add .v3-favlabel{color:var(--ink2)}
 .v3-favtile.add:hover{background:var(--g50)}
 /* --- Delta Wellness info pages (accent-token themed) --- */
@@ -308,3 +308,13 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 
 .v3-pagescroll{scrollbar-width:thin}
 .v3-pagefill{height:calc(100vh - 64px);flex-shrink:0}
+
+.v3-favstar{color:var(--ink);margin-right:6px;font-size:13px}
+.v3-favwrap{position:relative}
+.v3-favpick{position:absolute;top:10px;left:14px;right:14px;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:12px;box-shadow:0 12px 30px rgba(15,26,15,0.14);padding:8px;z-index:10;max-height:264px;overflow-y:auto}
+.v3-favpickhead{display:flex;justify-content:space-between;align-items:center;padding:4px 10px 8px;font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--ink3)}
+.v3-favpickhead .x{cursor:pointer;font-size:12px;color:var(--ink2);padding:2px 6px;border-radius:999px}
+.v3-favpickhead .x:hover{background:var(--g50)}
+.v3-favpickitem{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;font-size:13px;color:var(--ink);cursor:pointer}
+.v3-favpickitem:hover{background:var(--g100)}
+.v3-favpickitem svg{color:var(--g700)}
