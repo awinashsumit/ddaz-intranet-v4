@@ -286,7 +286,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-favtile.add:hover{background:var(--g50)}
 /* --- Delta Wellness info pages (accent-token themed) --- */
 .v3-infopage{--pa:#2DB035;--pa-soft:#E8F7E9}
-.v3-infohero{background:var(--pa-soft);padding:46px 28px 34px;text-align:center;font-family:var(--font)}
+.v3-infohero{background:var(--pa-soft);padding:46px 28px 34px;text-align:center;font-family:var(--font);position:relative}
 .v3-infocrumb{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--pa);margin-bottom:10px}
 .v3-infohero h1{margin:0 0 8px;font-size:34px;letter-spacing:-0.5px;color:var(--ink)}
 .v3-infohero p{margin:0 auto;max-width:640px;font-size:14.5px;color:var(--ink2);line-height:1.5}
@@ -333,3 +333,16 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-custgrip.off{cursor:default}
 .v3-custfav.dragging{opacity:.35}
 .v3-custfav[draggable="true"]{cursor:grab}
+
+.v3-themewrap{position:absolute;top:16px;right:20px;text-align:left}
+.v3-themebtn{font-family:var(--font);font-size:12px;font-weight:600;color:var(--ink2);background:rgba(255,255,255,0.72);border:1px solid rgba(0,0,0,0.10);border-radius:999px;padding:6px 13px;cursor:pointer;transition:background .15s}
+.v3-themebtn:hover{background:#fff;color:var(--ink)}
+.v3-themeoverlay{position:fixed;inset:0;z-index:59;background:transparent}
+.v3-themepanel{position:absolute;top:38px;right:0;z-index:60;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;box-shadow:0 14px 40px rgba(15,26,15,0.16);padding:12px 14px;width:230px}
+.v3-themepanel .h{font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--ink3);margin-bottom:10px}
+.v3-themepanel .g{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.v3-swatch{height:34px;border-radius:8px;border:2px solid transparent;cursor:pointer;padding:0}
+.v3-swatch:hover{transform:translateY(-1px)}
+.v3-swatch.active{border-color:var(--ink)}
+.v3-themereset{margin-top:12px;background:none;border:none;font-family:var(--font);font-size:12px;font-weight:600;color:var(--g800);cursor:pointer;padding:0}
+.v3-themereset:hover{text-decoration:underline}
