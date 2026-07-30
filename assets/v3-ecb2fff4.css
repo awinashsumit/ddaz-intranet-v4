@@ -346,3 +346,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-swatch.active{border-color:var(--ink)}
 .v3-themereset{margin-top:12px;background:none;border:none;font-family:var(--font);font-size:12px;font-weight:600;color:var(--g800);cursor:pointer;padding:0}
 .v3-themereset:hover{text-decoration:underline}
+
+.v3-infopage .v3-card{border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(180deg,color-mix(in srgb,var(--pa) 38%,transparent) 0%,color-mix(in srgb,var(--pa) 5%,transparent) 100%) border-box}
+.v3-themecustom{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12.5px;font-weight:600;color:var(--ink);cursor:pointer;font-family:var(--font)}
+.v3-themecustom input{width:36px;height:26px;border:1px solid rgba(0,0,0,0.12);border-radius:6px;padding:1px;background:#fff;cursor:pointer}
