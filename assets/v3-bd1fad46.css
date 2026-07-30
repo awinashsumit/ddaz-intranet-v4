@@ -305,3 +305,6 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-inforow .n{font-size:13.5px;font-weight:600;color:var(--ink);transition:color .15s}
 .v3-inforow .m{font-size:11.5px;font-weight:600;color:var(--pa);background:var(--pa-soft);padding:3px 10px;border-radius:999px;white-space:nowrap}
 .v3-infonote p{margin:0;font-size:13px;color:var(--ink2);line-height:1.55}
+
+.v3-pagescroll{scrollbar-width:thin}
+.v3-pagefill{height:calc(100vh - 64px);flex-shrink:0}
