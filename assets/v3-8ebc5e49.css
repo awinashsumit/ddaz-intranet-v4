@@ -354,3 +354,13 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-dwlist{display:flex;flex-direction:column;gap:12px;padding:18px}
 .v3-dwrow{display:flex;align-items:center;justify-content:space-between;padding:17px 20px;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;font-family:var(--font);transition:transform .15s}
 .v3-dwrow:hover{transform:translateY(-1px)}
+
+.v3-lcol{display:flex;flex-direction:column;gap:24px;min-width:0}
+.v3-annscroll{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;grid-auto-rows:unset}
+.v3-annscroll::-webkit-scrollbar{display:none}
+.v3-annscroll .v3-annitem{flex:0 0 262px;scroll-snap-align:start}
+.v3-annctrl{display:flex;align-items:center;gap:8px}
+.v3-carbtn{width:30px;height:30px;border-radius:999px;border:1px solid rgba(45,176,53,0.25);background:#fff;color:var(--g800);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 2px;transition:background .15s}
+.v3-carbtn:hover{background:var(--g100)}
+.v3-carbtn.solid{background:#2DB035;border-color:#2DB035;color:#fff}
+.v3-carbtn.solid:hover{background:#28a230}
