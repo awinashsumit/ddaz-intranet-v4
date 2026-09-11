@@ -368,3 +368,11 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-annscroll{scroll-padding-left:18px}
 .v3-annscroll .v3-annbody{padding:14px 18px 16px}
 .v3-toprow{align-items:stretch}
+
+/* --- Department home pages (v4) --- */
+.v3-deptmain{max-width:1120px;margin:0 auto;padding:38px 28px 14px;font-family:var(--font)}
+.v3-deptgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+@media(max-width:900px){.v3-deptgrid{grid-template-columns:1fr}}
+.v3-deptdesc{font-size:13px;color:var(--ink2);line-height:1.55;margin:2px 0 10px}
+.v3-deptnote{font-size:12px;color:var(--ink3);margin:12px 0 0;line-height:1.5}
+.v3-hero .v3-infocrumb{margin-bottom:12px}
