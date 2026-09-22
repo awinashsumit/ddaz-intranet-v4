@@ -382,7 +382,14 @@ isdoc?c.jsx("button",{className:"v3-dm-btn",children:"Download"}):null,
 isdoc?c.jsx("button",{className:"v3-dm-btn",children:"Share Link"}):null]})]})})}
 
 const HRQL=[[ks,"HR Forms & Docs","All policies & documents","#/documents","hr"],[ZP,"Paylocity","Pay, time & enrollment","#/applications",null],[Hx,"Benefits Portal","Medical, dental & vision","#/wellness",null],[q8,"Motivosity","Recognition & rewards","#/applications",null],[qs,"Employee Directory","Find people & teams","#/directory",null]];
-const HRPORT=[["Medical – UMR"],["Prescriptions – MedOne"],["Dental – Delta Dental of Arizona"],["Vision – DeltaVision"],["FSA – Surency Flex"],["HSA – HSA Bank"],["Retirement – Empower"]];
+const HRPORT=[
+["Medical – UMR","https://member.umr.com/"],
+["Prescriptions – MedOne","https://www.medone-rx.com/"],
+["Dental – Delta Dental of Arizona","https://www.deltadentalaz.com/member/"],
+["Vision – DeltaVision","https://member.eyemedvisioncare.com/deltavisionaz/en"],
+["FSA – Surency Flex","https://www.surency.com/"],
+["HSA – HSA Bank","https://hsabank.com/HSABank/Home-Page"],
+["Retirement – Empower","https://mercerwise.empower-retirement.com/participant/"]];
 const HRPERK=[
 {t:"Calm App",d:null,items:[["link","DDAZ Wellness – Calm App","Portal"],["code","Organization Code","Optum EWS"],["code","Company Code","Deltaaz"]]},
 {t:"Diamondbacks Discount Tickets",d:"For any accessible seating, groups of 8 or larger, or technical issues, please contact your Diamondbacks representative, Danae Morgan at dmorgan@dbacks.com. No returns, refunds, exchanges or upgrades on any tickets. All tickets based on availability.",items:[["link","Purchase Discounted Diamondbacks Tickets","Portal"],["code","Offer Code","DELTADENTAL"]]},
@@ -406,7 +413,7 @@ const pop=function(n,t,card){setDv({n:n,t:t,card:card,cat:null})};
 const portals=c.jsxs("div",{className:"v3-card v3-infocard",children:[
  c.jsx("h2",{className:"v3-hrhead",children:"Portals"}),
  c.jsx("div",{className:"pl",children:HRPORT.map(function(r0,i9){
-  return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(r0[0],"Portal","Portals")},className:"v3-inforow",children:[
+  return c.jsxs("a",{href:r0[1],target:"_blank",rel:"noopener noreferrer",className:"v3-inforow",children:[
    c.jsx("span",{className:"n",children:r0[0]}),
    c.jsx("span",{className:"m",children:"Portal"})
   ]},i9);
