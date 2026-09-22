@@ -384,13 +384,13 @@ isdoc?c.jsx("button",{className:"v3-dm-btn",children:"Share Link"}):null]})]})})
 const HRQL=[[ks,"HR Forms & Docs","All policies & documents","#/documents","hr"],[ZP,"Paylocity","Pay, time & enrollment","#/applications",null],[Hx,"Benefits Portal","Medical, dental & vision","#/wellness",null],[q8,"Motivosity","Recognition & rewards","#/applications",null],[qs,"Employee Directory","Find people & teams","#/directory",null]];
 const HRPORT=[["Medical – UMR"],["Prescriptions – MedOne"],["Dental – Delta Dental of Arizona"],["Vision – DeltaVision"],["FSA – Surency Flex"],["HSA – HSA Bank"],["Retirement – Empower"]];
 const HRPERK=[
-{t:"Calm App",d:"Free premium subscription to the Calm meditation and sleep app for all employees and up to five dependents.",l:"Get Calm Premium"},
-{t:"Nationwide Pet Insurance",d:"Discounted pet insurance plans to help cover vet bills for the furry members of your family.",l:"View Pet Insurance Plans"},
-{t:"Diamondbacks Discount Tickets",d:"Exclusive Arizona Diamondbacks home-game ticket discounts for DDAZ employees, family and friends.",l:"Get Ticket Discounts"},
-{t:"National & Enterprise Car Rentals",d:"Corporate discount codes for personal and business car rentals with National and Enterprise.",l:"View Rental Discounts"},
-{t:"Employee Merch",d:"Order DDAZ-branded apparel and merchandise from the employee store.",l:"Shop Employee Merch"},
-{t:"Verizon Discounts",d:"Monthly service and accessory discounts on eligible Verizon wireless plans.",l:"Check Your Eligibility"},
-{t:"LifeMart Member Discount Program",d:"Member savings on travel, electronics, childcare, groceries and everyday essentials.",l:"Browse LifeMart Deals"}];
+{t:"Calm App",d:null,items:[["link","DDAZ Wellness – Calm App","Portal"],["code","Organization Code","Optum EWS"],["code","Company Code","Deltaaz"]]},
+{t:"Diamondbacks Discount Tickets",d:"For any accessible seating, groups of 8 or larger, or technical issues, please contact your Diamondbacks representative, Danae Morgan at dmorgan@dbacks.com. No returns, refunds, exchanges or upgrades on any tickets. All tickets based on availability.",items:[["link","Purchase Discounted Diamondbacks Tickets","Portal"],["code","Offer Code","DELTADENTAL"]]},
+{t:"Employee Merch",d:"Your resource for accessing branded merchandise, company approved documents, and marketing materials. Get $50 off one order annually with the discount code.",items:[["link","View and Order Employee Merch","Portal"],["code","Discount Code","ThankYou26"],["link","How To: Brand Vault Training Video","Video"]]},
+{t:"LifeMart Member Discount Program",d:"As a Delta Dental of Arizona member, you get exclusive savings from LifeMart on major purchases and everyday essentials from brands you know and love, all in one convenient location. These discounts are designed to help you take care of your whole body and support a healthy, balanced life.",items:[["link","Get Started With LifeMart","Portal"]]},
+{t:"Nationwide Pet Insurance",d:"Delta Dental of Arizona is now eligible for preferred pricing on America's #1 pet insurance.",items:[["link","View Nationwide Pet Insurance Documents","PDF"]]},
+{t:"National and Enterprise Car Rentals",d:"Delta Dental of Arizona has accounts set up with National and Enterprise for car rentals for corporate and leisure use. Employees are responsible for all leisure rental fees but using the code may gain upgrade opportunities or expedited processing.",items:[["code","Leisure Rate code for Enterprise/National","XZ50E88"],["code","Business Rate code for Enterprise/National","XZ50E87"]]},
+{t:"Verizon Discounts",d:"Delta Dental of Arizona employees are eligible to receive an 8% discount off your Verizon mobile bill for personal devices.",items:[["link","Get Discount for Personal Verizon Accounts","Portal"]]}];
 const HRFEAT=[
 {img:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&auto=format&fit=crop&q=60",ttl:"Wellness Incentive",d:"We want to help you stay healthy. If you are enrolled in the company health plan, you can earn rewards by taking part in the wellness program.",l:"Submit Your Info"},
 {img:"https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=900&auto=format&fit=crop&q=60",ttl:"EAP",d:"With Optum Assist you'll have 24/7 access to a certified mental-health professional for you and your family. You get six free sessions per incident, per person.",l:"Learn More"},
@@ -401,10 +401,11 @@ function HRX(){
 const d9={t1:"Human",t2:"Resources",team:"HR Team",cat:"hr"};
 const[dv,setDv]=T.useState(null);
 const[ac,setAc]=T.useState(null);
+const[cp,setCp]=T.useState(null);
 const pop=function(n,t,card){setDv({n:n,t:t,card:card,cat:null})};
 const portals=c.jsxs("div",{className:"v3-card v3-infocard",children:[
  c.jsx("h2",{children:"Portals"}),
- c.jsx("div",{children:HRPORT.map(function(r0,i9){
+ c.jsx("div",{className:"pl",children:HRPORT.map(function(r0,i9){
   return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(r0[0],"Portal","Portals")},className:"v3-inforow",children:[
    c.jsx("span",{className:"n",children:r0[0]}),
    c.jsx("span",{className:"m",children:"Portal"})
@@ -489,8 +490,14 @@ return c.jsxs("div",{className:"flex flex-col h-screen overflow-hidden",style:{b
       c.jsx(GP,{size:16,className:"cv"})
      ]}),
      ac===i9&&c.jsxs("div",{className:"bd",children:[
-      c.jsx("p",{children:p9.d}),
-      c.jsx("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(p9.t,"Portal","Perks & Discounts")},className:"lnk",children:p9.l})
+      p9.d?c.jsx("p",{children:p9.d}):null,
+      c.jsx("div",{className:"its",children:p9.items.map(function(t0,j9){
+       if(t0[0]==="code"){return c.jsxs("div",{className:"cd",children:[
+        c.jsx("span",{className:"k",children:t0[1]}),
+        c.jsx("button",{className:"v"+(cp===t0[2]?" ok":""),title:"Click to copy",onClick:function(){try{navigator.clipboard.writeText(t0[2])}catch(x9){}setCp(t0[2])},children:cp===t0[2]?"Copied!":t0[2]})
+       ]},j9);}
+       return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(t0[1],t0[2]||"Portal","Perks & Discounts")},className:"lnk",children:[t0[1],c.jsx(yf,{size:13})]},j9);
+      })})
      ]})
     ]},i9);
    })})

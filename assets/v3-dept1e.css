@@ -442,3 +442,18 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hrteam .av{width:38px;height:38px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
 .v3-hrteam .nm{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
 .v3-hrteam .rl{display:block;font-size:11.5px;color:var(--ink3)}
+
+/* --- HR page v2: equal-height 3-col, portals scroll, perk codes --- */
+.v3-hr3col{align-items:stretch}
+.v3-hr3col>div{display:flex;min-width:0}
+.v3-hr3col .v3-card{flex:1;display:flex;flex-direction:column}
+.v3-hr3col .pl{flex:1;min-height:0;max-height:430px;overflow-y:auto;scrollbar-width:thin;padding-right:4px}
+@media(max-width:1000px){.v3-hr3col .pl{max-height:340px}}
+.v3-hr3col .v3-hrbtns{margin-top:auto;padding-top:14px}
+.v3-hraccitem .its{display:flex;flex-direction:column;gap:9px;align-items:flex-start;margin-top:2px}
+.v3-hraccitem .cd{display:flex;align-items:center;gap:9px;font-size:12.5px;flex-wrap:wrap}
+.v3-hraccitem .cd .k{color:var(--ink3);font-weight:600}
+.v3-hraccitem .cd .v{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:#1B5E20;background:#E8F7E9;border:1px dashed rgba(45,176,53,0.5);padding:3px 10px;border-radius:8px;cursor:pointer;transition:all .15s}
+.v3-hraccitem .cd .v:hover{background:#DDF2DF}
+.v3-hraccitem .cd .v.ok{background:#2DB035;color:#fff;border-style:solid;border-color:#2DB035}
+.v3-hraccitem .lnk{display:inline-flex;align-items:center;gap:5px}
