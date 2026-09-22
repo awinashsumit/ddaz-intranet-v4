@@ -400,3 +400,45 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-dm-btn:hover{background:#F7F8F6}
 .v3-dm-btn.p{background:#2DB035;border-color:#2DB035;color:#fff}
 .v3-dm-btn.p:hover{background:#28A030}
+
+/* --- HR hi-fi department page --- */
+.v3-hrhero{position:relative;text-align:center;padding:58px 28px 46px;font-family:var(--font);background:linear-gradient(rgba(10,34,14,0.52),rgba(10,34,14,0.62)),url("https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&auto=format&fit=crop&q=60") center/cover}
+.v3-hrhero .c{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#A5E8AB;margin-bottom:10px}
+.v3-hrhero h1{margin:0 0 8px;font-size:34px;letter-spacing:-0.5px;color:#fff;font-weight:700}
+.v3-hrhero p{margin:0 auto 24px;max-width:640px;font-size:14px;color:rgba(255,255,255,0.87);line-height:1.5}
+.v3-hrhero .v3-hero-search{margin-bottom:2px}
+.v3-hrql{padding:28px 28px 4px;text-align:center;background:#fff}
+.v3-hr3col{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:20px;align-items:start}
+@media(max-width:1000px){.v3-hr3col{grid-template-columns:1fr}}
+.v3-hrbtns{display:flex;flex-direction:column;gap:9px;margin-top:14px}
+.v3-hrcarol .who{display:flex;gap:12px;align-items:center;margin:2px 0 10px}
+.v3-hrcarol .av{width:44px;height:44px;border-radius:999px;background:#E8F7E9;color:#1B5E20;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.v3-hrcarol .nm{display:block;font-size:14px;font-weight:700;color:var(--ink)}
+.v3-hrcarol .rl{display:block;font-size:12px;color:var(--ink3)}
+.v3-hrband{background:#F7FAF7;margin:0 0 38px;padding:30px 0 16px}
+.v3-hrband .v3-h2{margin-bottom:16px}
+.v3-hracc{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;padding-bottom:14px}
+@media(max-width:900px){.v3-hracc{grid-template-columns:1fr}}
+.v3-hraccitem .hd{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 20px;background:transparent;border:none;cursor:pointer;font-family:var(--font);font-size:14px;font-weight:700;color:var(--ink);text-align:left}
+.v3-hraccitem .cv{color:#2DB035;transition:transform .18s;flex-shrink:0}
+.v3-hraccitem.open .cv{transform:rotate(90deg)}
+.v3-hraccitem .bd{padding:0 20px 16px}
+.v3-hraccitem .bd p{margin:0 0 10px;font-size:13px;color:var(--ink2);line-height:1.55}
+.v3-hraccitem .lnk{font-size:13px;font-weight:700;color:#2DB035;text-decoration:none}
+.v3-hraccitem .lnk:hover{text-decoration:underline}
+.v3-hrfeat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+@media(max-width:900px){.v3-hrfeat{grid-template-columns:1fr}}
+.v3-hrfeatcard{overflow:hidden}
+.v3-hrfeatcard img{width:100%;height:150px;object-fit:cover;display:block;border-radius:15px 15px 0 0}
+.v3-hrfeatcard .bd{padding:16px 20px 18px}
+.v3-hrfeatcard h3{margin:0 0 8px;font-size:15.5px;color:var(--ink)}
+.v3-hrfeatcard p{margin:0 0 10px;font-size:13px;color:var(--ink2);line-height:1.55}
+.v3-hrfeatcard .lnk{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#2DB035;text-decoration:none}
+.v3-hrfeatcard .lnk:hover{text-decoration:underline}
+.v3-hrteam{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
+@media(max-width:600px){.v3-hrteam{grid-template-columns:1fr}}
+.v3-hrteam .mem{display:flex;align-items:center;gap:11px;padding:8px 6px;text-decoration:none;border-radius:10px;transition:background .15s}
+.v3-hrteam .mem:hover{background:#F7FAF7}
+.v3-hrteam .av{width:38px;height:38px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+.v3-hrteam .nm{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
+.v3-hrteam .rl{display:block;font-size:11.5px;color:var(--ink3)}
