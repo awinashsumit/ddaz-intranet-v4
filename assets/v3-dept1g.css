@@ -463,3 +463,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hrfeatcard .bd{display:flex;flex-direction:column;flex:1}
 .v3-hrfeatcard .bd .lnk{margin-top:auto;padding-top:6px}
 .v3-deptgrid>.v3-infocard{height:100%}
+
+/* --- Dept page card headings: match Home's flat bento-title style (no underline) --- */
+.v3-deptmain .v3-card h2,
+.v3-deptmain .v3-hrfeatcard h3{font-size:15.5px;font-weight:700;color:var(--ink);border-bottom:none;padding-bottom:0;margin:0 0 14px}
