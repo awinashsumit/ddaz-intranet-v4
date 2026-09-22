@@ -4,10 +4,10 @@
    gradient-stroke cards, tint-pill selections.
    ============================================================ */
 :root{
-  --g900:#0F3D14; --g800:#1B5E20; --g700:#2DB035; --g500:#43A047;
-  --g100:#E8F5E9; --g50:#F7FAF7;
+  --g900:#0F3D14; --g800:#1B5E20; --g700:#1D8928; --g500:#43A047;
+  --g100:#E8F5E9; --g50:#F4F4F4;
   --ink:#0F1A0F; --ink2:#4A5E4A; --ink3:#8A9E8A;
-  --hairline:rgba(0,0,0,0.07); --stroke-hi:rgba(45,176,53,0.38); --stroke-lo:rgba(45,176,53,0.05);
+  --hairline:rgba(0,0,0,0.07); --stroke-hi:rgba(29,137,40,0.38); --stroke-lo:rgba(29,137,40,0.05);
   --font:Calibri,'Segoe UI',system-ui,sans-serif;
 }
 
@@ -43,18 +43,18 @@
 
 /* ---------- Hero ---------- */
 .v3-hero{
-  background:rgb(247,250,247);
+  background:#F4F4F4;
   color:var(--ink);padding:52px 28px 44px;text-align:center;font-family:var(--font);position:relative;overflow:hidden;
 }
 .v3-hero::before{content:none}
 .v3-hero>*{position:relative}
 .v3-hero-title{font-size:30px;font-weight:700;letter-spacing:-0.4px;margin:0 0 6px}
-.v3-hero-title em{font-style:normal;color:#2DB035}
+.v3-hero-title em{font-style:normal;color:#1D8928}
 .v3-hero-sub{font-size:13.5px;color:var(--ink2);margin:0 0 22px}
 .v3-hero-search{
   display:flex;align-items:center;gap:10px;max-width:560px;margin:0 auto 30px;
   background:#fff;border-radius:999px;padding:11px 20px;color:var(--ink3);
-  border:1px solid rgba(45,176,53,0.16);box-shadow:0 4px 18px rgba(0,0,0,0.06);
+  border:1px solid rgba(29,137,40,0.16);box-shadow:0 4px 18px rgba(0,0,0,0.06);
 }
 .v3-hero-search input{border:none;outline:none;flex:1;font-size:14px;font-family:var(--font);color:var(--ink);background:transparent}
 .v3-quickrow{display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
@@ -76,7 +76,7 @@
 .v3-seehead .v3-h2{margin:0}
 .v3-viewall{
   display:flex;align-items:center;justify-content:center;width:32px;height:32px;flex-shrink:0;
-  border-radius:999px;border:1px solid rgba(45,176,53,0.25);color:var(--g700);text-decoration:none;transition:background .15s;
+  border-radius:999px;border:1px solid rgba(29,137,40,0.25);color:var(--g700);text-decoration:none;transition:background .15s;
 }
 .v3-viewall:hover{background:var(--g100)}
 
@@ -119,7 +119,7 @@
 .v3-joiner-name{font-size:15px;font-weight:700;color:var(--ink);margin:0 0 3px}
 .v3-joiner-role{font-size:12.5px;color:var(--ink2);margin:0 0 11px}
 .v3-pill{display:inline-block;border-radius:999px;font-size:10.5px;font-weight:700;padding:3px 10px}
-.v3-pill-new{background:#FFF3E0;color:#E65100;text-transform:uppercase;letter-spacing:.4px}
+.v3-pill-new{background:#FBE9E1;color:#C35500;text-transform:uppercase;letter-spacing:.4px}
 .v3-eventlist{padding:8px 10px}
 .v3-event{display:flex;align-items:center;gap:14px;padding:11px 10px;border-bottom:1px solid rgba(0,0,0,0.05)}
 .v3-event:last-child{border-bottom:none}
@@ -151,7 +151,7 @@
 .v3-band button:hover{transform:translateY(-1px)}
 
 /* Footer */
-.v3-footer{background:#F2F2F2;color:var(--ink);font-family:var(--font);padding:44px 28px 26px}
+.v3-footer{background:#F4F4F4;color:var(--ink);font-family:var(--font);padding:44px 28px 26px}
 .v3-footgrid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px}
 .v3-foot-h{font-size:13px;font-weight:700;letter-spacing:.3px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,0.10);color:var(--ink)}
 .v3-foot-link{display:block;font-size:12.5px;color:var(--ink2);text-decoration:none;padding:5px 0;transition:color .15s}
@@ -164,7 +164,7 @@
 .v3-recentrow{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;max-width:1080px;margin:0 auto}
 .v3-recent{
   display:flex;align-items:center;gap:11px;text-decoration:none;text-align:left;
-  background:#fff;border:1px solid rgba(45,176,53,0.16);
+  background:#fff;border:1px solid rgba(29,137,40,0.16);
   border-radius:14px;padding:11px 16px 11px 12px;transition:all .15s;min-width:0;
 }
 .v3-recent:hover{background:var(--g100);transform:translateY(-2px)}
@@ -189,7 +189,7 @@
 .v3-bento-dot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
 .v3-bento-tile:hover{background:linear-gradient(var(--g100),var(--g100)) padding-box,linear-gradient(180deg,var(--stroke-hi) 0%,var(--stroke-lo) 100%) border-box}
 .v3-bento-tile:hover .v3-bento-title{color:var(--g800)}
-.v3-bento-tile:hover .v3-bento-item{border-bottom-color:rgba(45,176,53,0.14)}
+.v3-bento-tile:hover .v3-bento-item{border-bottom-color:rgba(29,137,40,0.14)}
 .v3-bento-tile:hover .v3-bento-item:hover{color:var(--g800)}
 
 /* ---------- Home top row: announcements + rail ---------- */
@@ -209,13 +209,13 @@
 .v3-annbody .v3-newstitle{font-size:14px}
 .v3-rail{display:flex;flex-direction:column;gap:24px;min-width:0}
 .v3-qlgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 18px}
-.v3-qlchip{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px solid rgba(45,176,53,0.16);background:#FBFDFB;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;transition:all .15s}
+.v3-qlchip{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;border:1px solid rgba(29,137,40,0.16);background:#FBFDFB;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;transition:all .15s}
 .v3-qlchip:hover{background:var(--g100);color:var(--g800);transform:translateY(-1px)}
 .v3-qldot{width:6px;height:6px;border-radius:999px;background:var(--g500);flex-shrink:0}
 @media (max-width:1080px){.v3-toprow{grid-template-columns:1fr}}
 
 /* --- ticker (happening strip) --- */
-.v3-ticker{display:flex;align-items:stretch;height:40px;background:#2DB035;overflow:hidden;position:relative;z-index:1}
+.v3-ticker{display:flex;align-items:stretch;height:40px;background:#1D8928;overflow:hidden;position:relative;z-index:1}
 .v3-ticker-label{display:flex;align-items:center;flex:0 0 auto;padding:0 18px 0 28px;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink);background:rgba(255,255,255,0.30)}
 .v3-ticker-track{flex:1;display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 72px,#000 calc(100% - 72px),transparent);mask-image:linear-gradient(90deg,transparent,#000 72px,#000 calc(100% - 72px),transparent)}
 .v3-ticker-move{display:flex;align-items:center;white-space:nowrap;animation:v3tick 55s linear infinite;will-change:transform}
@@ -235,7 +235,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 
 /* --- v4: customizable homepage --- */
 .v3-custrow{display:flex;justify-content:flex-end;margin-bottom:14px}
-.v3-custbtn{font-family:var(--font);font-size:13px;font-weight:600;color:var(--g800);background:#fff;border:1px solid rgba(45,176,53,0.35);border-radius:999px;padding:7px 16px;cursor:pointer;transition:background .15s}
+.v3-custbtn{font-family:var(--font);font-size:13px;font-weight:600;color:var(--g800);background:#fff;border:1px solid rgba(29,137,40,0.35);border-radius:999px;padding:7px 16px;cursor:pointer;transition:background .15s}
 .v3-custbtn:hover{background:var(--g100)}
 .v3-custoverlay{position:fixed;inset:0;background:rgba(15,26,15,0.32);z-index:200;display:flex;justify-content:flex-end}
 .v3-custpanel{width:360px;max-width:90vw;background:#fff;height:100%;padding:22px 24px;overflow-y:auto;display:flex;flex-direction:column;font-family:var(--font);border-radius:16px 0 0 16px;animation:v3slidein .22s ease}
@@ -247,7 +247,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-custsub{font-size:12.5px;color:var(--ink2);margin:0 0 14px;line-height:1.5}
 .v3-custitem{display:flex;align-items:center;justify-content:space-between;padding:13px 2px;border-bottom:1px solid var(--hairline);font-size:13.5px;color:var(--ink);cursor:pointer}
 .v3-custswitch{appearance:none;-webkit-appearance:none;width:38px;height:22px;border-radius:999px;background:#D7DED7;position:relative;cursor:pointer;transition:background .15s;flex-shrink:0;margin:0}
-.v3-custswitch:checked{background:#2DB035}
+.v3-custswitch:checked{background:#1D8928}
 .v3-custswitch::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .15s}
 .v3-custswitch:checked::after{transform:translateX(16px)}
 .v3-custreset{margin-top:auto;align-self:flex-start;background:none;border:none;color:var(--g800);font-size:12.5px;font-weight:600;cursor:pointer;padding:14px 0 0;font-family:var(--font)}
@@ -285,7 +285,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-favtile.add .v3-favlabel{color:var(--ink2)}
 .v3-favtile.add:hover{background:var(--g50)}
 /* --- Delta Wellness info pages (accent-token themed) --- */
-.v3-infopage{--pa:#2DB035;--pa-soft:#E8F7E9}
+.v3-infopage{--pa:#1D8928;--pa-soft:#E8F7E9}
 .v3-infohero{background:var(--pa-soft);padding:46px 28px 34px;text-align:center;font-family:var(--font);position:relative}
 .v3-infocrumb{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--pa);margin-bottom:10px}
 .v3-infohero h1{margin:0 0 8px;font-size:34px;letter-spacing:-0.5px;color:var(--ink)}
@@ -360,9 +360,9 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-annscroll::-webkit-scrollbar{display:none}
 .v3-annscroll .v3-annitem{flex:0 0 262px;scroll-snap-align:start}
 .v3-annctrl{display:flex;align-items:center;gap:8px}
-.v3-carbtn{width:30px;height:30px;border-radius:999px;border:1px solid rgba(45,176,53,0.25);background:#fff;color:var(--g800);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 2px;transition:background .15s}
+.v3-carbtn{width:30px;height:30px;border-radius:999px;border:1px solid rgba(29,137,40,0.25);background:#fff;color:var(--g800);font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 2px;transition:background .15s}
 .v3-carbtn:hover{background:var(--g100)}
-.v3-carbtn.solid{background:#2DB035;border-color:#2DB035;color:#fff}
+.v3-carbtn.solid{background:#1D8928;border-color:#1D8928;color:#fff}
 .v3-carbtn.solid:hover{background:#28a230}
 
 .v3-annscroll{scroll-padding-left:18px}
@@ -398,7 +398,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-dm-foot{padding:14px 22px 20px;display:flex;flex-direction:column;gap:9px;border-top:1px solid rgba(0,0,0,0.06);margin-top:12px}
 .v3-dm-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:12px;border-radius:12px;font-size:14.5px;font-weight:700;font-family:var(--font);cursor:pointer;border:1px solid rgba(0,0,0,0.10);background:#fff;color:var(--ink);transition:all .15s}
 .v3-dm-btn:hover{background:#F7F8F6}
-.v3-dm-btn.p{background:#2DB035;border-color:#2DB035;color:#fff}
+.v3-dm-btn.p{background:#1D8928;border-color:#1D8928;color:#fff}
 .v3-dm-btn.p:hover{background:#28A030}
 
 /* --- HR hi-fi department page --- */
@@ -415,16 +415,16 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hrcarol .av{width:44px;height:44px;border-radius:999px;background:#E8F7E9;color:#1B5E20;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .v3-hrcarol .nm{display:block;font-size:14px;font-weight:700;color:var(--ink)}
 .v3-hrcarol .rl{display:block;font-size:12px;color:var(--ink3)}
-.v3-hrband{background:#F7FAF7;margin:0 0 38px;padding:30px 0 16px}
+.v3-hrband{background:#F4F4F4;margin:0 0 38px;padding:30px 0 16px}
 .v3-hrband .v3-h2{margin-bottom:16px}
 .v3-hracc{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;padding-bottom:14px}
 @media(max-width:900px){.v3-hracc{grid-template-columns:1fr}}
 .v3-hraccitem .hd{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 20px;background:transparent;border:none;cursor:pointer;font-family:var(--font);font-size:14px;font-weight:700;color:var(--ink);text-align:left}
-.v3-hraccitem .cv{color:#2DB035;transition:transform .18s;flex-shrink:0}
+.v3-hraccitem .cv{color:#1D8928;transition:transform .18s;flex-shrink:0}
 .v3-hraccitem.open .cv{transform:rotate(90deg)}
 .v3-hraccitem .bd{padding:0 20px 16px}
 .v3-hraccitem .bd p{margin:0 0 10px;font-size:13px;color:var(--ink2);line-height:1.55}
-.v3-hraccitem .lnk{font-size:13px;font-weight:700;color:#2DB035;text-decoration:none}
+.v3-hraccitem .lnk{font-size:13px;font-weight:700;color:#1D8928;text-decoration:none}
 .v3-hraccitem .lnk:hover{text-decoration:underline}
 .v3-hrfeat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 @media(max-width:900px){.v3-hrfeat{grid-template-columns:1fr}}
@@ -433,12 +433,12 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hrfeatcard .bd{padding:16px 20px 18px}
 .v3-hrfeatcard h3{margin:0 0 8px;font-size:15.5px;color:var(--ink)}
 .v3-hrfeatcard p{margin:0 0 10px;font-size:13px;color:var(--ink2);line-height:1.55}
-.v3-hrfeatcard .lnk{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#2DB035;text-decoration:none}
+.v3-hrfeatcard .lnk{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:#1D8928;text-decoration:none}
 .v3-hrfeatcard .lnk:hover{text-decoration:underline}
 .v3-hrteam{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
 @media(max-width:600px){.v3-hrteam{grid-template-columns:1fr}}
 .v3-hrteam .mem{display:flex;align-items:center;gap:11px;padding:8px 6px;text-decoration:none;border-radius:10px;transition:background .15s}
-.v3-hrteam .mem:hover{background:#F7FAF7}
+.v3-hrteam .mem:hover{background:#F4F4F4}
 .v3-hrteam .av{width:38px;height:38px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
 .v3-hrteam .nm{display:block;font-size:13.5px;font-weight:700;color:var(--ink)}
 .v3-hrteam .rl{display:block;font-size:11.5px;color:var(--ink3)}
@@ -453,9 +453,9 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hraccitem .its{display:flex;flex-direction:column;gap:9px;align-items:flex-start;margin-top:2px}
 .v3-hraccitem .cd{display:flex;align-items:center;gap:9px;font-size:12.5px;flex-wrap:wrap}
 .v3-hraccitem .cd .k{color:var(--ink3);font-weight:600}
-.v3-hraccitem .cd .v{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:#1B5E20;background:#E8F7E9;border:1px dashed rgba(45,176,53,0.5);padding:3px 10px;border-radius:8px;cursor:pointer;transition:all .15s}
+.v3-hraccitem .cd .v{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:#1B5E20;background:#E8F7E9;border:1px dashed rgba(29,137,40,0.5);padding:3px 10px;border-radius:8px;cursor:pointer;transition:all .15s}
 .v3-hraccitem .cd .v:hover{background:#DDF2DF}
-.v3-hraccitem .cd .v.ok{background:#2DB035;color:#fff;border-style:solid;border-color:#2DB035}
+.v3-hraccitem .cd .v.ok{background:#1D8928;color:#fff;border-style:solid;border-color:#1D8928}
 .v3-hraccitem .lnk{display:inline-flex;align-items:center;gap:5px}
 
 /* --- HR page v3: equal-height Benefits Features + Resources/Team --- */
@@ -466,3 +466,67 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 
 /* --- Bold specific HR card headings (Portals/Payroll/Hey Carol!/Additional Resources/HR Team) --- */
 .v3-hrhead{font-weight:700}
+
+/* ============================================================
+   V4.2 — Sidebar nav shell, ADA-compliant color/card overhaul
+   ============================================================ */
+
+/* ---------- Card primitive: solid border + drop shadow (was fading gradient stroke) ---------- */
+.v3-card{
+  border:1px solid rgba(0,0,0,0.09);border-radius:16px;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,0.05), 0 1px 12px rgba(0,0,0,0.04);
+}
+.v3-infopage .v3-card{border:1px solid rgba(0,0,0,0.09);background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.05), 0 1px 12px rgba(0,0,0,0.04)}
+
+/* ---------- Sidebar navigation ---------- */
+.v3-sidebar{
+  position:fixed;top:0;left:0;bottom:0;width:232px;z-index:50;
+  background:#fff;border-right:1px solid #414042;
+  display:flex;flex-direction:column;overflow-y:auto;scrollbar-width:thin;
+  font-family:var(--font);
+}
+.v3-sblogo{padding:22px 22px 16px;flex-shrink:0}
+.v3-sblogo img{display:block}
+.v3-sbnav{flex:1;padding:4px 14px 20px}
+.v3-sbgroup{margin-bottom:4px}
+.v3-sbgrouplabel{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:16px 10px 8px}
+.v3-sbitem{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer;transition:background .15s,color .15s;margin-bottom:1px}
+.v3-sbitem:hover{background:#F7F8F6;color:var(--ink)}
+.v3-sbitem.active{background:#E7F5E9;color:#1D8928}
+.v3-sbicon{flex-shrink:0;display:flex}
+.v3-sblabel{flex:1;min-width:0}
+.v3-sbbadge{font-size:10px;font-weight:700;color:#fff;border-radius:999px;padding:1px 7px;flex-shrink:0}
+
+/* ---------- Top masthead (content-area header, sits right of sidebar) ---------- */
+.v3-topmast{
+  display:flex;align-items:center;gap:14px;flex-shrink:0;height:64px;padding:0 26px;
+  background:#fff;border-bottom:1px solid #414042;font-family:var(--font);
+  margin-left:232px;
+}
+.v3-divbar{width:1px;height:22px;background:#414042;flex-shrink:0}
+.v3-mastttl{font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2)}
+
+/* Shift every page's main content area right of the fixed sidebar */
+.v3-sidebar ~ [class*="v3-body"],
+.v3-sidebar ~ [class*="v3-pagescroll"]{margin-left:232px}
+
+/* ---------- Urgent alert banner (ADA red — reserved for true emergencies) ---------- */
+.v3-urgentbar{
+  display:flex;align-items:center;gap:10px;flex-shrink:0;
+  background:#C35500;color:#fff;font-size:13.5px;font-weight:600;
+  padding:12px 26px;font-family:var(--font);
+}
+.v3-urgentbar strong{font-weight:800;letter-spacing:.02em}
+
+/* ---------- Explore tiles: "View All" text link (was icon-only) ---------- */
+.v3-viewall-x{
+  width:auto;height:auto;padding:6px 12px;border-radius:999px;gap:6px;
+  font-size:12px;font-weight:700;color:#1D8928;border:1px solid rgba(29,137,40,0.25);
+}
+.v3-viewall-x:hover{background:#E7F5E9}
+
+/* ---------- Quick Links panel (replaces the old colored Delta Wellness rows) ---------- */
+.v3-qlrow{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:600;font-size:13.5px;color:var(--ink);transition:background .15s}
+.v3-qlrow:hover{background:#F4F4F4}
+.v3-qlicon{width:32px;height:32px;border-radius:9px;background:#E7F5E9;color:#1D8928;display:flex;align-items:center;justify-content:center;flex-shrink:0}
