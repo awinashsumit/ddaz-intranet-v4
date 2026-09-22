@@ -371,7 +371,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 
 /* --- Department home pages (v4) --- */
 .v3-deptmain{max-width:1120px;margin:0 auto;padding:38px 28px 14px;font-family:var(--font)}
-.v3-deptgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.v3-deptgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:stretch}
 @media(max-width:900px){.v3-deptgrid{grid-template-columns:1fr}}
 .v3-deptdesc{font-size:13px;color:var(--ink2);line-height:1.55;margin:2px 0 10px}
 .v3-deptnote{font-size:12px;color:var(--ink3);margin:12px 0 0;line-height:1.5}
@@ -426,7 +426,7 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hraccitem .bd p{margin:0 0 10px;font-size:13px;color:var(--ink2);line-height:1.55}
 .v3-hraccitem .lnk{font-size:13px;font-weight:700;color:#2DB035;text-decoration:none}
 .v3-hraccitem .lnk:hover{text-decoration:underline}
-.v3-hrfeat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.v3-hrfeat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 @media(max-width:900px){.v3-hrfeat{grid-template-columns:1fr}}
 .v3-hrfeatcard{overflow:hidden}
 .v3-hrfeatcard img{width:100%;height:150px;object-fit:cover;display:block;border-radius:15px 15px 0 0}
@@ -457,3 +457,9 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hraccitem .cd .v:hover{background:#DDF2DF}
 .v3-hraccitem .cd .v.ok{background:#2DB035;color:#fff;border-style:solid;border-color:#2DB035}
 .v3-hraccitem .lnk{display:inline-flex;align-items:center;gap:5px}
+
+/* --- HR page v3: equal-height Benefits Features + Resources/Team --- */
+.v3-hrfeatcard{display:flex;flex-direction:column}
+.v3-hrfeatcard .bd{display:flex;flex-direction:column;flex:1}
+.v3-hrfeatcard .bd .lnk{margin-top:auto;padding-top:6px}
+.v3-deptgrid>.v3-infocard{height:100%}
