@@ -466,10 +466,3 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 
 /* --- Bold specific HR card headings (Portals/Payroll/Hey Carol!/Additional Resources/HR Team) --- */
 .v3-hrhead{font-weight:700}
-
-/* --- Portals: quick-link buttons (open external site in new tab) --- */
-.v3-hrportgrid{display:flex;flex-direction:column;gap:9px;padding-right:2px}
-.v3-hrportbtn{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid rgba(0,0,0,0.09);background:#fff;text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink);transition:all .15s}
-.v3-hrportbtn:hover{border-color:#2DB035;background:#F7FBF7;color:#1B5E20}
-.v3-hrportbtn .ic{color:#8A9E8A;flex-shrink:0;transition:color .15s}
-.v3-hrportbtn:hover .ic{color:#2DB035}
