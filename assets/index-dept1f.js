@@ -404,7 +404,7 @@ const[ac,setAc]=T.useState(null);
 const[cp,setCp]=T.useState(null);
 const pop=function(n,t,card){setDv({n:n,t:t,card:card,cat:null})};
 const portals=c.jsxs("div",{className:"v3-card v3-infocard",children:[
- c.jsx("h2",{children:"Portals"}),
+ c.jsx("h2",{className:"v3-hrhead",children:"Portals"}),
  c.jsx("div",{className:"pl",children:HRPORT.map(function(r0,i9){
   return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(r0[0],"Portal","Portals")},className:"v3-inforow",children:[
    c.jsx("span",{className:"n",children:r0[0]}),
@@ -413,7 +413,7 @@ const portals=c.jsxs("div",{className:"v3-card v3-infocard",children:[
  })})
 ]});
 const payroll=c.jsxs("div",{className:"v3-card v3-infocard",children:[
- c.jsx("h2",{children:"Payroll"}),
+ c.jsx("h2",{className:"v3-hrhead",children:"Payroll"}),
  c.jsx("p",{className:"v3-deptdesc",children:"Paylocity is your all-in-one HR portal. To get started, click the Single Sign-On button and sign in with the same username and password you use for your laptop. If you need it, our company number is 30920."}),
  c.jsxs("div",{className:"v3-hrbtns",children:[
   c.jsxs("button",{className:"v3-dm-btn p",onClick:function(){pop("Paylocity – Single Sign-On","Portal","Payroll")},children:[c.jsx(aA,{size:15}),"Sign In to Paylocity"]}),
@@ -421,7 +421,7 @@ const payroll=c.jsxs("div",{className:"v3-card v3-infocard",children:[
  ]})
 ]});
 const carol=c.jsxs("div",{className:"v3-card v3-infocard v3-hrcarol",children:[
- c.jsx("h2",{children:"Hey Carol!"}),
+ c.jsx("h2",{className:"v3-hrhead",children:"Hey Carol!"}),
  c.jsxs("div",{className:"who",children:[
   c.jsx("span",{className:"av",children:"CG"}),
   c.jsxs("span",{children:[
@@ -436,7 +436,7 @@ const carol=c.jsxs("div",{className:"v3-card v3-infocard v3-hrcarol",children:[
  ]})
 ]});
 const resources=c.jsxs("div",{className:"v3-card v3-infocard",children:[
- c.jsx("h2",{children:"Additional Resources"}),
+ c.jsx("h2",{className:"v3-hrhead",children:"Additional Resources"}),
  c.jsx("div",{children:HRRES.map(function(r0,i9){
   return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(r0[0],r0[1],"Additional Resources")},className:"v3-inforow",children:[
    c.jsx("span",{className:"n",children:r0[0]}),
@@ -445,7 +445,7 @@ const resources=c.jsxs("div",{className:"v3-card v3-infocard",children:[
  })})
 ]});
 const team=c.jsxs("div",{className:"v3-card v3-infocard",children:[
- c.jsx("h2",{children:"HR Team"}),
+ c.jsx("h2",{className:"v3-hrhead",children:"HR Team"}),
  c.jsx("div",{className:"v3-hrteam",children:HRTEAM.map(function(m0,i9){
   const ins=m0[0].split(" ").map(function(w9){return w9[0]}).join("").slice(0,2);
   return c.jsxs("a",{href:"#/directory",className:"mem",children:[
@@ -494,7 +494,7 @@ return c.jsxs("div",{className:"flex flex-col h-screen overflow-hidden",style:{b
       c.jsx("div",{className:"its",children:p9.items.map(function(t0,j9){
        if(t0[0]==="code"){return c.jsxs("div",{className:"cd",children:[
         c.jsx("span",{className:"k",children:t0[1]}),
-        c.jsx("button",{className:"v"+(cp===t0[2]?" ok":""),title:"Click to copy",onClick:function(){try{navigator.clipboard.writeText(t0[2])}catch(x9){}setCp(t0[2])},children:cp===t0[2]?"Copied!":t0[2]})
+        c.jsx("button",{className:"v"+(cp===t0[2]?" ok":""),title:"Click to copy",onClick:function(){try{var cpp9=navigator.clipboard.writeText(t0[2]);if(cpp9&&cpp9.catch)cpp9.catch(function(){})}catch(x9){}setCp(t0[2])},children:cp===t0[2]?"Copied!":t0[2]})
        ]},j9);}
        return c.jsxs("a",{href:"#",onClick:function(e9){e9.preventDefault();pop(t0[1],t0[2]||"Portal","Perks & Discounts")},className:"lnk",children:[t0[1],c.jsx(yf,{size:13})]},j9);
       })})

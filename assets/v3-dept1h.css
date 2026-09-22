@@ -463,3 +463,6 @@ button.border-b-2[class*="border-[#43A047]"]:hover{background:var(--g100);color:
 .v3-hrfeatcard .bd{display:flex;flex-direction:column;flex:1}
 .v3-hrfeatcard .bd .lnk{margin-top:auto;padding-top:6px}
 .v3-deptgrid>.v3-infocard{height:100%}
+
+/* --- Bold specific HR card headings (Portals/Payroll/Hey Carol!/Additional Resources/HR Team) --- */
+.v3-hrhead{font-weight:700}
